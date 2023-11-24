@@ -155,7 +155,12 @@ html {
 	  padding: 5px 10px;
 	  display: block;
   }
-  
+  .gallery .img-fluid{
+	max-height: 260px;
+	object-fit: cover;
+	border-radius: 10px;
+  }
+
   /* Second, Third and more Tiers	
    * We move the 2nd and 3rd etc tier dropdowns to the left
    * by the amount of the width of the first tier.
@@ -171,6 +176,11 @@ html {
   /* Change ' +' in order to change the Dropdown symbol */
   li > a:only-child:after { content: ''; }
   
+  .link_thumbnail {
+	width: 45px;
+	height: 45px;
+	
+  }
   
   /* Media Queries
   --------------------------------------------- */
@@ -196,6 +206,7 @@ html {
 		  display: none;
 	  }
   
+	
 	  /* Stylinf the toggle lable */
 	  .toggle {
 		  display: block;
@@ -329,7 +340,7 @@ html {
 	  border-radius: 5px;
 	  max-width: 500px;
 	  position: relative;
-	  margin: 8em auto;
+	  margin: 6em auto;
 	  padding: 3em 1em;
   }
   .popup p{
